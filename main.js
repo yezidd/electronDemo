@@ -23,7 +23,8 @@ function createWindow() {
 
     win.webContents.openDevTools();
 
-    require("./main-process/menu")
+    require("./main-process/menu");
+    require("./main-process/tray");
 
     win.on("close", () => {
         win = null;
