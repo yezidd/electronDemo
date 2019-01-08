@@ -25,6 +25,8 @@ function createWindow() {
 
     require("./main-process/menu");
     require("./main-process/tray");
+    require("./main-process/dialog");
+    require("./main-process/notification");
 
     win.on("close", () => {
         win = null;
