@@ -23,6 +23,8 @@ function createWindow() {
 
     win.webContents.openDevTools();
 
+    require("./main-process/menu")
+
     win.on("close", () => {
         win = null;
     })
