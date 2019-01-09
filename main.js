@@ -33,6 +33,7 @@ function createWindow() {
     })
 }
 
+require("./main-process/shortcut");
 app.on("ready", createWindow);
 
 app.on("window-all-closed", () => {

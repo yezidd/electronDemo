@@ -45,3 +45,15 @@
 + 可以打开一个文件存储框
 
 + 可以打开一个错误信息提示框
+
+> 消息通知Notification
+
++ 不知道为什么只能触发一次通知，之后就不再显示，不知道是不是跟系统设置有关系？
+
+> 注册全局快捷键
+
++ app.on("ready")=>globalShortcut.register()
+
++ app.on("will-quit")=>globalShortcut.unregisterAll()
+
++ 这是快捷键的基本逻辑
